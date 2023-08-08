@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha3-dist - Copy/bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css" class="">
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web (1)/fontawesome-free-6.4.0-web/css/all.css" class="">
+    <link rel="stylesheet" href="./top.css" class="">
+    
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Sales', 'Expenses'],
+          ['2004',  1000,      400],
+          ['2005',  1170,      460],
+          ['2006',  660,       1120],
+          ['2007',  1030,      540]
+        ]);
+
+        var options = {
+          title: 'Company Performance',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+
+
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load('current', {'packages':['corechart']});
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+
+    var data = google.visualization.arrayToDataTable([
+      ['Task', 'Hours per Day'],
+      ['Work',     11],
+      ['Eat',      2],
+      ['Commute',  2],
+      ['Watch TV', 2],
+      ['Sleep',    7]
+    ]);
+
+    var options = {
+      title: 'My Daily Activities'
+    };
+
+    var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+    chart.draw(data, options);
+  }
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+  google.charts.load('current', {'packages':['bar']});
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ['Year', 'Sales', 'Expenses', 'Profit'],
+      ['2014', 1000, 400, 200],
+      ['2015', 1170, 460, 250],
+      ['2016', 660, 1120, 300],
+      ['2017', 1030, 540, 350]
+    ]);
+
+    var options = {
+      chart: {
+        title: 'Company Performance',
+        subtitle: 'Sales, Expenses, and Profit: 2014-2017',
+      }
+    };
+
+    var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+    chart.draw(data, google.charts.Bar.convertOptions(options));
+  }
+</script>
+
+
+</head>
+<body>
+    <div class=" always container-fluid bg-secondary-subtle ">
+        <div class="row">
+          
+            <div class="col-2 pl-3 bg-light rounded-4 width:80% m-4 padding-10 ">
+                <i class="fa-solid fa-copyright text-success display-6 mt-5 ml-8 mb-5 mr-8">SALES</i>
+                <h6 class="m-3">MENU</h6>
+                <div class="yes  m-3 ">
+                    <i class="fa-solid fa-square-poll-vertical text-secondary"> dashboard</i><br><br>
+                    <i class="fa-solid fa-list text-secondary  ">  purchase</i><br><br>
+                    <i class="fa-solid fa-cart-shopping text-secondary">  orders</i><br><br>
+                    <i class="fa-solid fa-user text-secondary">  costumers</i><br><br>
+                    <i class="fa-solid fa-chart-pie text-secondary">  analysis</i><br><br>
+                    <i class="fa-regular fa-chart-bar text-secondary">  reports </i><br><br>
+                    
+                    
+                    
+
+                
+        
+        </div>
+        <h6 class="m-3">MENU</h6>
+        
+        
+        
+        <div class="nav m-3">
+            <i class="fa-solid fa-circle-check text-secondary">privacy</i><br><br>
+            <i class="fa-solid fa-gear text-secondary">setting</i><br><br>
+            <h6>ANNUAL REPORT</h6>
+            <button type="button" class="btn btn-success btn-lg">reports <i class="fa-solid fa-arrow-right "></i></button>
+           
+        
+        </div>
+        </div>
+            <div class="col-6 bg-none  m-2"> 
+                <nav class="navbar bg-none mt-4">
+                    <div class="container-fluid">
+                        <span class="navbar-text text-dark display-6">
+                            Dashboard
+                          </span>
+                          
+                      <form class="d-flex" role="search">
+                        <input class="form-control me-2 width:80%" type="search"  placeholder=" Search here......" aria-label="Search" >
+                       
+                      </form>
+                      
+                    </div>
+                    <p class="m-1">Sales report</p>
+
+                  </nav>
+                  <div class="row g-3">
+                
+                        <div class="col-3 rounded-4 d-flex">
+                          <div class="card bg-primary">
+                            <div class="card-body">
+                              <h5 class="card-title"><i class="fa-solid fa-robot display-6 text-light ml-2 bg-dark text-light"></i></h5>
+                              <p class="card-text"><i class="fa-solid fa-chart-line display-6 align-self-end ml-2 text-light"></i></p>
+                              <h5>$12090</h5>
+                              <p>total products</p>
+
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <div class="col-3 rounded-4 d-flex">
+                            <div class="card bg-danger">
+                              <div class="card-body">
+                                <h5 class="card-title"><i class="fa-solid fa-robot display-6 text-light ml-2 bg-dark text-light "></i></h5>
+                                <p class="card-text"><i class="fa-solid fa-chart-line display-6 align-self-end ml-2 text-light"></i></p>
+                                <h5>$12090</h5>
+                                <p>total products</p>
+  
+                              </div>
+                            </div>
+                          </div>
+
+
+                          <div class="col-3 rounded-4 d-flex">
+                            <div class="card bg-info">
+                              <div class="card-body">
+                                <h5 class="card-title"><i class="fa-solid fa-robot display-6 text-light ml-2 bg-dark text-light"></i></h5>
+                                <p class="card-text"><i class="fa-solid fa-chart-line display-6 align-self-end ml-2 text-light"></i></p>
+                                <h5>$12090</h5>
+                                <p>total products</p>
+  
+                              </div>
+                            </div>
+                          </div>
+            
+                          
+                          <div class="col-3 rounded-4 d-flex">
+                            <div class="card bg-warning">
+                              <div class="card-body">
+                                <h5 class="card-title"><i class="fa-solid fa-robot display-6 text-light ml-2 bg-dark text-light "></i></h5>
+                                <p class="card-text"><i class="fa-solid fa-chart-line display-6 text-light"></i></p>
+                                <h5>$12090</h5>
+                                <p>total products</p>
+  
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row g-3">
+                            <div class="col-8 "> 
+                                <div id="curve_chart"></div>
+                            </div>
+                            <div class="col-4 ">
+                                <div id="columnchart_material" style=""></div>
+                            </div>
+                          </div>
+
+                  </div>
+                  <div class="d-grid mt-2">
+                    <button class="btn btn-light text-secondary" type="button">lorem</button>
+                    <button class="btn btn-light  text-secondary" type="button">lorem</button>
+                    <button class="btn btn-light text-secondary" type="button">lorem</button>
+                  </div>
+                  
+
+
+
+
+
+
+
+            </div>
+            <div class="col-3 bg-none ">
+              <div class="row mt-5">
+                <div class="col-2"><i class="fa-solid fa-robot display-6 text-light ml-2 bg-dark text-light "></i></div>
+                <div class="col-8 d-flex justify-content-center"> lorem ipusme</div>
+                <div class="col-2"><i class="fa-solid fa-gear display-6"></i></div>
+              </div>
+              <div class="card m-2" style="width: 20rem;">
+                <div class="card-header bottom-border-none">top seller</div>
+                <img src="./images/lady-img.jpg" class="card-img-top mx-auto mt-3" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title border  border-danger  width:10rem;  mx-5  text-align-center "><h3 class="mx-5">Larra Hanalik</h3></h5>
+
+                  <div class="row mx-5">
+                    <div class="col-6 ">lorem <br>12345</div>
+                    <div class="col-6">lorem <br>12345</div>
+                  </div>
+                  <a href="#" class="btn btn-danger  mt-2  px-2 d-flex justify-content-center">join now</a>
+                </div>
+              </div>
+              <div class="row bg-light rounded-4 mt-4 m-2 m-auto d-flex justify-content-between align-item-center  " style="width: 20rem;">
+                <div class="col-9 d-flex">lorem</div>
+                <div class="col-3"><a href="#" class="btn btn-primary">lorem </a></div>
+                <div id="piechart" style="width: 300px;"></div>
+              </div>
+            </div>
+
+            
+
+        </div>
+    </div>
+   
+    <script src="bootstrap-5.3.0-alpha3-dist - Copy/bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.js"></script>
+    
+</body>
+</html>
